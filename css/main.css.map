@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACL,KAAK,EAAE,IAAI;;ACDb,EAAE;EACA,KAAK,ECDE,KAAK;;ADId,CAAE;EACA,KAAK,ECLE,KAAK",
+"sources": ["../scss/_header.scss","../scss/_dashboard.scss","../scss/_variables.scss"],
+"names": [],
+"file": "main.css"
+}

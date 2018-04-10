@@ -1,0 +1,44 @@
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 1px 9px 0 rgba(201,201,201,0.50);
+
+
+  @include media-breakpoint-down(sm) {
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+
+
+    &.dashboard {
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+    }
+  }
+
+  // Progress bar percentage
+  h2 {
+    position: absolute;
+    color: $hsbc-red;
+    font-family: $helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    right: 4%;
+    top: 5px;
+  }
+}

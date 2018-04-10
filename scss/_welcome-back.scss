@@ -1,0 +1,99 @@
+#welcome-back{
+  padding-bottom: 50px;
+
+  .topHeader {
+    text-align: center;
+    margin-top: 36px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 90px;
+    }
+
+    .container {
+
+      max-width: 266px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 540px;
+      }
+
+      h1 {
+        font-size: 24px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 40px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 26px;
+        color: #787878;
+
+        @include media-breakpoint-up(md) {
+
+        }
+
+      }
+    }
+  }
+
+  .content {
+    margin-top: 60px;
+
+    .container {
+      max-width: 286px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 400px;
+        text-align: center;
+      }
+
+      h5 {
+        font-family: $helvetica-neue;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      input {
+        margin-top: 40px;
+
+        &::placeholder {
+          font-size: 14px;
+
+          @include media-breakpoint-up(md) {
+            font-size: 14px;
+          }
+        }
+      }
+
+    }
+
+    .next-page-btns {
+      max-width: 266px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 500px;
+      }
+
+      .continue {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 214px;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        .red-submit-border {
+          backgorund-color: transparent;
+          border: 2px solid $hsbc-red;
+          color: $hsbc-red;
+          margin-top: 20px;
+          padding: 10px 16px;
+        }
+      }
+    }
+  }
+
+}

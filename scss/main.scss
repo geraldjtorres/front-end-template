@@ -1,0 +1,33 @@
+//
+//Bootstrap
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
+@import "./bootstrap/mixins";
+@import "./bootstrap/grid";
+// Optional
+@import "./bootstrap/reboot";
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/code";
+@import "./bootstrap/grid";
+@import "./bootstrap/transitions";
+@import "./bootstrap/card";
+@import "./bootstrap/modal";
+
+// Custom css
+@import "./customVariables";
+@import "./global";
+@import "./asRange";
+@import "./header";
+@import "./dashboard";
+@import "./calculator-form";
+@import "./loan-results";
+@import "./sign-in";
+@import "./internet-banking-login";
+@import "./otp-login";
+@import "./welcome-back";
+@import "./error-page";
+@import "./loan-saved";
+@import "./loan-submitted";
+@import "./loan-application";
+@import "./loan-application-2";

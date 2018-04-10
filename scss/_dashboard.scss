@@ -1,0 +1,108 @@
+#dashboard {
+  .topHeader {
+    text-align: center;
+    margin-top: 36px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 90px;
+    }
+
+    .container {
+      @include media-breakpoint-up(md) {
+        max-width: 740px;
+      }
+
+      h1 {
+        font-size: 18px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 40px;
+        }
+      }
+
+      h4 {
+        color: $hsbc-red;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $helvetica;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        margin-top: 20px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 16px;
+            margin-top: 32px;
+        }
+      }
+
+    }
+  }
+}
+
+
+// Button Styles
+
+.links {
+  max-width: 280px;
+  margin-top: 20px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 500px;
+  }
+}
+
+.links-button {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 100%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+  // background-image: url('/assets/images/icon-account-grey.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 78%;
+
+  &.links-account {
+    background-image: url('/assets/images/icon-account-grey.png');
+    &:hover {
+      background-image: url('/assets/images/icon-account-white.png');
+      background-color: $hsbc-red;
+    }
+  }
+
+  &.links-cc {
+    background-image: url('/assets/images/icon-cc-grey.png');
+    &:hover {
+      background-image: url('/assets/images/icon-cc-white.png');
+      background-color: $hsbc-red;
+    }
+  }
+
+  &.links-loan {
+    background-image: url('/assets/images/icon-loan-grey.png');
+    &:hover {
+      background-image: url('/assets/images/icon-loan-white.png');
+      background-color: $hsbc-red;
+    }
+  }
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0 0 0 48px;
+    font-family: $helvetica;
+
+    @include media-breakpoint-up(md) {
+      margin: 30px 0 0 0;
+    }
+  }
+}
